@@ -19,5 +19,6 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IPizzaRepository, PizzaRepository>();
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddScoped<IIngredientRepository, IngredientRepository>();
+        services.AddScoped<ISideRepository, SideRepository>();
     }
 }

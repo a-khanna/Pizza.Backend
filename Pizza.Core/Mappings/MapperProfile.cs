@@ -18,6 +18,7 @@ public class MapperProfile : Profile
         CreateMap<Side, SideDto>().ReverseMap();
         CreateMap<SideOrderRequest, SideDto>();
         CreateMap<SideDto, SideOrderResponse>();
+        CreateMap<SideDto, SideResponse>();
 
         CreateMap<Ingredient, IngredientDto>().ReverseMap();
         CreateMap<IngredientDto, IngredientResponseBase>();

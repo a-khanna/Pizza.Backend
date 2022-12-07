@@ -19,8 +19,7 @@ public static class StartupInjection
         services.ConfigureSwagger();
 
         services.AddDefaultCorrelationId();
-        services.AddCors(options => options.AddPolicy(
-            Constants.AllowAll,
+        services.AddCors(options => options.AddDefaultPolicy(
             policy => policy
                 .AllowAnyOrigin()
                 .AllowAnyHeader()

@@ -1,5 +1,4 @@
 using CorrelationId;
-using Pizza.API;
 using Pizza.API.Startup;
 using Pizza.Infrastructure.Persistence;
 using Serilog;
@@ -24,7 +23,7 @@ try
     app.UseSerilogRequestLogging();
     app.UseCorrelationId();
     app.UseHttpsRedirection();
-    app.UseCors(Constants.AllowAll);
+    app.UseCors();
     app.UseAuthorization();
     app.MapControllers();
     app.Run();
