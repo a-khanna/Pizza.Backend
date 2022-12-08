@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pizza.Data\Pizza.Infrastructure.Persistence.csproj" />
+    <ProjectReference Include="..\Pizza.Infrastructure.Persistence\Pizza.Infrastructure.Persistence.csproj" />
     <ProjectReference Include="..\Pizza.Domain\Pizza.Domain.csproj" />
   </ItemGroup>
 

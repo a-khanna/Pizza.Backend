@@ -5,9 +5,9 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza.API", "Pizza.API\Pizza.API.csproj", "{F1731E86-0770-4ED0-A8DB-C18E27184C3C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza.Application", "Pizza.Core\Pizza.Application.csproj", "{75EE8A92-F753-48FD-8E8E-B1AD8AFEF8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza.Application", "Pizza.Application\Pizza.Application.csproj", "{75EE8A92-F753-48FD-8E8E-B1AD8AFEF8DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza.Infrastructure.Persistence", "Pizza.Data\Pizza.Infrastructure.Persistence.csproj", "{270FCE16-DCC7-46B1-88CE-977414AB70A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizza.Infrastructure.Persistence", "Pizza.Infrastructure.Persistence\Pizza.Infrastructure.Persistence.csproj", "{270FCE16-DCC7-46B1-88CE-977414AB70A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza.Domain", "Pizza.Domain\Pizza.Domain.csproj", "{748F36F2-8F7F-4501-9006-AD42BF560AB8}"
 EndProject
