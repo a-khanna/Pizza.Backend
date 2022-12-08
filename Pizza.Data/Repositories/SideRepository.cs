@@ -15,7 +15,9 @@ public class SideRepository : BaseRepository, ISideRepository
 
     public async Task<IList<Side>> GetSidesAsync()
     {
-        var entities = await _dbContext.Sides.ToListAsync();
+        var entities = await _dbContext.Sides
+            .Where(p => !p.IsCustom)
+            .ToListAsync();
         return entities;
     }
 }

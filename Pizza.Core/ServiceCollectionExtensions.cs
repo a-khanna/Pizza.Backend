@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Pizza.Application.Services;
 using Pizza.Application.Services.Interfaces;
+using Pizza.Application.Validators;
 using Pizza.Core.Services;
 
 namespace Pizza.Application;
@@ -14,6 +15,8 @@ public static class ServiceCollectionExtensions
         services.AddTransient<IIngredientService, IngredientService>();
         services.AddTransient<ISideService, SideService>();
         services.AddTransient<IPriceService, PriceService>();
+
+        services.AddSingleton<ICreateOrderValidator, CreateOrderValidator>();
     }
 
     public static void ConfigureAutoMapper(this IServiceCollection services)

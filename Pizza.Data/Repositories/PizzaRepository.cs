@@ -15,6 +15,7 @@ public class PizzaRepository : BaseRepository, IPizzaRepository
     public async Task<IList<Domain.Entities.Pizza>> GetPizzasAsync()
     {
         var result = await _dbContext.Pizzas
+            .Where(p => !p.IsCustom)
             .Include(p => p.Ingredients)
             .ToListAsync();
 
