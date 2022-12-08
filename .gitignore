@@ -110,11 +110,6 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 
-# Sqlite
-*.db
-*.db-shm
-*.db-wal
-
 # Visual Studio profiler
 *.psess
 *.vsp
