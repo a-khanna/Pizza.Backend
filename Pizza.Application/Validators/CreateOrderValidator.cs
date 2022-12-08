@@ -20,7 +20,7 @@ public class CreateOrderValidator : ICreateOrderValidator
                 if (pizza.Quantity <= 0)
                     throw new ValidationException("Pizza Quantity cannot be less than 1");
 
-                if (pizza.Ingredients?.Any() ?? false)
+                if (!pizza.Ingredients?.Any() ?? true)
                     throw new ValidationException("Ingredients cannot be null or empty");
             }
         }

@@ -38,6 +38,6 @@ public class OrderController : ControllerBase
         var order = _mapper.Map<OrderDto>(request);
         var result = await _orderService.AddOrderAsync(order);
 
-        return new CreatedResult("", _mapper.Map<CreateOrderResponse>(result));
+        return new CreatedResult(string.Empty, _mapper.Map<CreateOrderResponse>(result));
     }
 }
